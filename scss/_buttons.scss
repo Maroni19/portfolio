@@ -13,6 +13,8 @@
     font-weight: bold;
     cursor: pointer;
     text-align: center;
+    outline: none;
+    
   
     @media (max-width: $screen-xs){
       width: 100%;
@@ -34,6 +36,7 @@
     @extend %btn;
     background: $second;
     border: 2px solid $second;
+    
   
     &:hover {
       background: $secondShade;
@@ -42,6 +45,7 @@
   
   .btn-outline {
     @extend %btn;
+    
   
     &:hover {
       background: #fff;

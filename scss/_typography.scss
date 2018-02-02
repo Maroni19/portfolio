@@ -61,3 +61,15 @@ html {
       color: $white;
     }
   }
+
+  //link style for button
+.styledLink{
+    text-decoration: none;
+    &:visited { 
+      text-decoration: none;
+      color: $white;
+    }
+    &:focus {
+       text-decoration: none;
+    }
+}

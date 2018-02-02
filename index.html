@@ -12,13 +12,13 @@
 <body>
     <section class="hero bg-black">
         <header class="wrap cf">
-            <div class="logo-name pull-left">Roman Freelancer</div>
+            <div class="logo-name pull-left">Roman Mazurenko</div>
             <div class="hamburger pull-right _hamburger">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
             <nav class="hero-nav pull-right _nav">
                 <ul class="list-unstyled">
-                    <li class="hero-nav-item"><a href="">My Services</a></li>
+                    <li class="hero-nav-item"><a href="#chapterMySkills">My Skills</a></li>
                     <li class="hero-nav-item"><a href="">My Work</a></li>
                     <li class="hero-nav-item"><a href="">My Clients</a></li>
                     <li class="hero-nav-item"><a href="">About Me</a></li>
@@ -26,6 +26,7 @@
                 </ul>
             </nav>   
         </header>
+
         <div class="section wrap text-center">
             <p class="prime hero-subtitle text-uppercase">frontend developer</p>
     
@@ -36,18 +37,129 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <div class="text-right mobile-text-center">
-                        <div class="btn-outline btn-large">learn more</div>
+                        <button type="button" class="btn-outline btn-large" data-toggle="modal" data-target="#myModal">Learn more</button>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                   <h4 class="modal-title text-left">About Me</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-left">Hello! I am Roman, a front-end developer of beatiful,
+                                         adaptive, colorful websites. Will make your website fly in 
+                                         the Internet network and bring your company huge profit and success.</p>
+                                </div>
+                                <div class="modal-footer">
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal finish --> 
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="text-left mobile-text-center">
-                        <div class="btn-second btn-large" data-toggle="modal" data-target="#contactMe">contact me</div>
+                        <button type="button" class="btn-second btn-large" data-toggle="modal" data-target="#myModal1">contact me</button>
                     </div>
+                     <!-- Modal -->
+                        <div class="modal fade" id="myModal1" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       <h4 class="modal-title text-left">My contacts:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-left">
+                                            tel: +38(067)4094570 </br>
+                                            email: maroni101010@gmail.com </br>
+                                            skype: maroni107
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                         <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     <!-- Modal finish -->
                 </div>
             </div>
         </div>
     </section>
-    
+    <section class="section service-section bg-white text-center">
+        <div class="wrap">
+            <h2 id="chapterMySkills" class="h2 mb-2">My Skills</h2>
+            <div class="h5 prime mb-10">
+                    The technologies that I used when developing web sites.
+            </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service-wrap text-center">
+                            <div class="picture">
+                                <img src="../img/html5.png" alt="">
+                            </div>
+                            <div class="h3 mb-4">
+                                HTML5
+                            </div>
+                            <div class="service-description  mb-4">
+                                    HTML5 is a markup language used for structuring and presenting content on the World Wide Web.
+                                     It is the fifth and current major version of the HTML standard.
+                            </div>
+                            <div>
+                                <a class="btn-prime center styledLink" target="_blanck" href="https://en.wikipedia.org/wiki/HTML5"> learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-wrap text-center">
+                            <div class="picture circle bg-prime">
+                                <img src="" alt="">
+                            </div>
+                            <div class="h3 mb-4">
+                                Graphic Design
+                            </div>
+                            <div class="service-description  mb-4">
+                                Suspendisse et quam id mauris pulvinar elementum. Donec blandit ante semper ligula feugiat, et pharetra diam lobortis.”
+                            </div>
+                            <div class="btn-prime center">learn more</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-wrap text-center">
+                            <div class="picture circle bg-prime">
+                                <img src="" alt="">
+                            </div>
+                            <div class="h3 mb-4">
+                                Graphic Design
+                            </div>
+                            <div class="service-description  mb-4">
+                                Suspendisse et quam id mauris pulvinar elementum. Donec blandit ante semper ligula feugiat, et pharetra diam lobortis.”
+                            </div>
+                            <div class="btn-prime center">learn more</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-wrap text-center">
+                            <div class="picture circle bg-prime">
+                                <img src="" alt="">
+                            </div>
+                            <div class="h3 mb-4">
+                                Graphic Design
+                            </div>
+                            <div class="service-description  mb-4">
+                                Suspendisse et quam id mauris pulvinar elementum. Donec blandit ante semper ligula feugiat, et pharetra diam lobortis.”
+                            </div>
+                            <div class="btn-prime center">learn more</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
     <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
