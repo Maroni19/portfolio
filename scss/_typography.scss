@@ -73,3 +73,12 @@ html {
        text-decoration: none;
     }
 }
+//link style for email
+.styleLinkEmail {
+  &:focus {
+    text-decoration: none;
+  }
+  &:hover {
+    color: $green;
+  }
+}
