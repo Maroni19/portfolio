@@ -109,4 +109,24 @@ section {
 .styleImgMyWork {
   width: 100%;
 }
+.carusel-box {
+  width: 40rem;
+  height: 40rem;
+  margin: 0 auto;
+  @media (max-width: $screen-md){
+    width: 100%;
+  } 
+}
+.carousel-indicators {
+  li {
+    background-color: $white;
+    border-color: $prime;
+  }
+  .active {
+   background-color: $prime;
+ }
+}
+.imgItem {
+  margin: 2rem auto;
+}
 

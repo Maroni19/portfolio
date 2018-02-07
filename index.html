@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/pages/home.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 <body>
     <section class="hero bg-black">
@@ -21,7 +22,7 @@
                     <li class="hero-nav-item"><a href="#chapterMySkills">My Skills</a></li>
                     <li class="hero-nav-item"><a href="#chapterAboutMe">About Me</a></li>
                     <li class="hero-nav-item"><a href="#chapterMyWork">My Work</a></li>
-                    <li class="hero-nav-item"><a href="">My Clients</a></li>
+                    <li class="hero-nav-item"><a href="#chapterMyClients">My Clients</a></li>
                     <li class="hero-nav-item"><a href="">Contacts</a></li>
                 </ul>
             </nav>   
@@ -48,9 +49,9 @@
                                    <h4 class="modal-title text-left">About Me</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p class="text-left">Hello! I am Roman, a front-end developer of beatiful,
-                                         adaptive, colorful websites. Will make your website fly in 
-                                         the Internet network and bring your company huge profit and success.</p>
+                                    <p class="text-left">Hello! My name is Roman. I'm a front-end developer of beautiful, 
+                                        adaprive web sites with a variety of functions. More detailed information about my 
+                                        works you can see in the section "my works".</p>
                                 </div>
                                 <div class="modal-footer">
                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -305,13 +306,65 @@
             <a class="btn-prime center styledLink" target="_blanck" href="https://github.com/dashboard">SEE MORE PROJECTS</a>
         </div>
     </section>
-    <script
-        src="https://code.jquery.com/jquery-2.2.4.min.js"
+
+    <section class="section bg-gray text-center">
+        <div class="wrap">
+            <h2 id="chapterMyClients" class="h2 mb-2">My Clients</h2>
+            <div class="h5 prime mb-4">
+                Find out what my clients say about me!
+            </div>
+            <div id="myCarousel" class="carousel slide bg-gray" data-ride="carousel">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                    <!-- Wrapper for slides -->
+                <div class="carousel-inner carusel-box">
+                    <div class="item active">
+                        <img class="imgItem circle mb-4" src="../img/medic.png" alt="foto">
+                        <p class="mb-3"><em>Eugene Gulevatyi</em></p>
+                        <p>"Thanks to Roman for the excellent site that helped our company raise
+                             the sales of medical equipment. We hope for further cooperation! "</p>
+                    </div>
+                  
+                    <div class="item">
+                        <img class="imgItem circle mb-4" src="../img/sasha.png" alt="foto">
+                        <p class="mb-3"><em>Alexandra Krachkovskaya</em></p>
+                        <p>"I am very grateful for the cooperation with Roman, who helped make our site
+                             more interesting and attractive for customers."</p>
+                    </div>
+                  
+                    <div class="item">
+                        <img class="imgItem circle mb-4" src="../img/nata.png" alt="foto">
+                        <p class="mb-3"><em>Natalya Chernik</em></p>
+                        <p>"Our site again works without failures. We all advise cooperation with Roman.
+                             The work was completed on time and qualitatively."</p>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="sr-only ">Next</span>
+                </a> 
+            </div>
+        </div>    
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
-
-    <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    crossorigin="anonymous"></script>
+    
     <script src="./js/build.js"></script>
+
 </body>
 </html>
