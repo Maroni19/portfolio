@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./css/pages/home.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
 </head>
 <body>
-    <section class="hero bg-black">
+    <section id="hero" class="hero bg-black">
         <header class="wrap cf">
             <div class="logo-name pull-left">Roman Mazurenko</div>
             <div class="hamburger pull-right _hamburger">
@@ -23,7 +25,7 @@
                     <li class="hero-nav-item"><a href="#chapterAboutMe">About Me</a></li>
                     <li class="hero-nav-item"><a href="#chapterMyWork">My Work</a></li>
                     <li class="hero-nav-item"><a href="#chapterMyClients">My Clients</a></li>
-                    <li class="hero-nav-item"><a href="">Contacts</a></li>
+                    <li class="hero-nav-item"><a href="#chapterMyContacts">Contacts</a></li>
                 </ul>
             </nav>   
         </header>
@@ -348,6 +350,7 @@
                 </div>
                 <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicons glyphicons-chevron-left"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="right carousel-control" href="#myCarousel" data-slide="next">
@@ -355,6 +358,60 @@
                 </a> 
             </div>
         </div>    
+    </section>
+
+    <section class="section bg-white text-center">
+        <div class="wrap">
+            <h2 id="chapterMyContacts" class="h2 mb-2">Get in Touch</h2>
+            <div class="h5 prime mb-4">
+                    Find out my contacts. I will be glad to cooperate with you!
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mobile-text-center">
+                        <button type="button" class="btn-second btn-large" data-toggle="modal" data-target="#myModal1">contact me</button>
+                    </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal1" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title text-left">My contacts:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-left">
+                                            tel: +38(067)4094570 </br>
+                                            email: maroni101010@gmail.com </br>
+                                            skype: maroni107
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Modal finish -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section bg-black text-center">
+        <div class="wrap">
+            <div class="h5 prime mb-4">
+                &#169; Copyright2017 Roman's Website. All rights reserved.
+            </div>
+            <div>
+                <a href="https://github.com/" target="_blanck"><i class="fa fa-2x fa-github-square"></i></a>
+                <a href="https://www.facebook.com/" target="_blanck"><i class="fa fa-2x fa-facebook-square"></i></a>
+                <a href="mailto:maroni101010@gmail.com" target="_blanck"><i class="fa fa-2x fa-envelope-square"></i></a>
+                <a href="#hero"><i class="fa fa-2x fa-home"></i></a>
+                <a href="https://www.google.com.ua" target="_blanck"><i class="fa fa-2x fa-google"></i></a>
+            </div>
+        </div>
     </section>
     
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"

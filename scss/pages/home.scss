@@ -129,4 +129,11 @@ section {
 .imgItem {
   margin: 2rem auto;
 }
+.fa-2x {
+  margin: 2rem 1rem;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+  }
+}
 
